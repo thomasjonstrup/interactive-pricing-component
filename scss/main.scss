@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+// Base: contained within this file are all your resets, variables, mixins, and any utility classes.
+@import '_base.scss';
+
+// Normalize.css
+@import '_rem.scss';
+
+// Normalize.css
+//@import '_normalize.scss';
+
+// Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
+@import '_layout.scss';
+// Components: anything reusable such as buttons, navbars, cards etc.
+@import '_components.scss';
+
+//Main: it should ONLY contain the imports for the above files.

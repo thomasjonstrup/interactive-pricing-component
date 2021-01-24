@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* h1 {
+	line-height: 3.5rem;
+} */
+
+@use "sass:math" as math;
+
+// Flexbox display
+@mixin flexbox {
+	display: flex;
+}
