@@ -42,17 +42,19 @@
 				<div class="container">
 					<article class="card">
 						<div class="card__header">
-							<p>100K Pageviews</p>
+							<p class="card__view" id="pageviews-count">
+								100K Pageviews
+							</p>
 							<input
 								type="range"
 								name="range"
 								class="slider"
 								id="range"
 							/>
-							<h2 class="card__price">
-								$16.00
+							<div class="card__price">
+								<span id="price">$16.00</span>
 								<span class="card__duration">/month</span>
-							</h2>
+							</div>
 
 							<div class="card__content">
 								<p>Monthly Billing</p>
@@ -60,12 +62,10 @@
 									type="checkbox"
 									name="checkanually"
 									class="switch"
-									id="toggle_pricing1"
-									checked="checked"
+									id="toggle_discount"
 								/>
-								<p class="card__billing">
-									Yearly Billing <span>25%</span>
-								</p>
+								<p class="card__billing">Yearly Billing</p>
+								<p class="card__discount">-25%</p>
 							</div>
 						</div>
 						<div class="card__footer">
