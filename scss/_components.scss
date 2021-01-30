@@ -152,6 +152,7 @@ p {
 
 		@include breakpoint-up(medium) {
 			justify-content: flex-end;
+			margin-top: 2rem;
 		}
 	}
 
@@ -244,7 +245,7 @@ p {
 		flex-direction: column;
 
 		@include breakpoint-up(medium) {
-			padding: 4rem 3rem;
+			padding: 3rem 3rem;
 		}
 	}
 
