@@ -1,5 +1,7 @@
 # Frontend Mentor - Interactive pricing component
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1ec620e2-fd05-4c16-9ae1-8296bc19bee1/deploy-status)](https://app.netlify.com/sites/interactive-pricing-component/deploys)
+
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
