@@ -125,6 +125,7 @@ p {
 	background-color: white;
 	box-shadow: 0 10px 40px -20px rgba(46, 78, 150, 0.4);
 	margin: -7rem 1rem 1rem 1rem;
+	position: relative;
 
 	@include breakpoint-up(medium) {
 		margin-top: -9rem;
@@ -170,6 +171,10 @@ p {
 	&__view {
 		font-size: 1.2rem;
 		margin-bottom: 2rem;
+
+		@include breakpoint-up(medium) {
+			align-self: flex-start;
+		}
 	}
 
 	&__price {
@@ -179,6 +184,13 @@ p {
 		justify-content: center;
 		align-items: center;
 		margin-top: 3rem;
+
+		@include breakpoint-up(medium) {
+			position: absolute;
+			top: 0;
+			right: 3rem;
+			margin-top: 4rem;
+		}
 	}
 
 	&__duration {
@@ -194,6 +206,17 @@ p {
 		padding: 0.1rem 0.6rem;
 		border-radius: 1rem;
 		font-size: 0.8rem;
+
+		span {
+			display: none;
+		}
+
+		@include breakpoint-up(medium) {
+			margin-right: 2rem;
+			span {
+				display: inline;
+			}
+		}
 	}
 
 	&__item {
@@ -215,13 +238,14 @@ p {
 
 	&__header {
 		padding: 4rem 2rem;
-	}
-
-	&__header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
+		@include breakpoint-up(medium) {
+			padding: 4rem 3rem;
+		}
 	}
 
 	&__footer {
@@ -304,6 +328,28 @@ input[type='range']:focus {
 	outline: none;
 
 	&::-webkit-slider-thumb {
+		/* box-shadow: 0 0 20px 5px $SoftCyan; */
+		//box-shadow: 0 0 1rem 0.5rem $soft-cyan;
+		box-shadow: 0 12px 10px 5px hsla(174, 77%, 80%, 0.6);
+		border: 0px solid #000000;
+		height: 3.8rem;
+		width: 3.8rem;
+		border-radius: 50%;
+		background-color: $strong-cyan;
+		background-image: url('../images/icon-slider.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		-webkit-appearance: none;
+
+		&:active,
+		&:hover {
+			background-color: hsl(176, 65%, 41%);
+		}
+		/* 		margin-top: -3.6px; */
+	}
+
+	&::-moz-range-thumb {
 		/* box-shadow: 0 0 20px 5px $SoftCyan; */
 		//box-shadow: 0 0 1rem 0.5rem $soft-cyan;
 		box-shadow: 0 12px 10px 5px hsla(174, 77%, 80%, 0.6);
